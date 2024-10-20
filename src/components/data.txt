@@ -1,0 +1,19 @@
+Primary Gradient Color (Logo Color):
+
+Primary Gradient: linear-gradient(45deg, #00AEEF, #262262)
+Complementary Colors:
+
+Primary Text Color: #333333
+Secondary Text Color: #666666
+Background Color: #F5F5F5
+Accent Color: #FF6F61 (This is just an example accent color; you can choose one that complements your primary gradient.)
+Button Colors:
+
+Primary Button Background Color: #00AEEF
+Primary Button Text Color: #FFFFFF
+Secondary Button Background Color: #262262
+Secondary Button Text Color: #FFFFFF
+Link Colors:
+
+Link Color: #00AEEF
+Visited Link Color: #262262

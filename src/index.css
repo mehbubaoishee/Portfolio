@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Palanquin:wght@100;200;300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.font-Palanquin {
+  font-family: "Palanquin", sans-serif;
+}
+
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.font-lato {
+  font-family: "Lato", sans-serif;
+}
+
+.color-primary {
+  color: #262262;
+}
+
+.color-sec {
+  color: #00AEEF;
+}
+
+.background-primary {
+  background-color: #262262;
+}
+
+.background-sec {
+  background-color: #00AEEF;
+}
+
+
+
+
+
+
+
+
+/* ===================== */
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hexagon {
+  position: relative;
+  width: 86.55px;
+  height: 150px;
+  background: white;
+  border-radius: 1em / .5em;
+  box-shadow:
+    0 8px 8px -15px #431f1f,
+    /* top shadow */
+    0 -8px 8px -15px #431f1f;
+  /* bottom shadow */
+  transform: rotate(30deg);
+}
+
+.hexagon::before,
+.hexagon::after {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: inherit;
+  border-radius: inherit;
+
+}
+
+
+.hexagon::before {
+  transform: rotate(60deg);
+  box-shadow:
+    0 8px 8px -15px #431f1f,
+    /* top shadow */
+    0 -8px 8px -15px #431f1f;
+}
+
+.hexagon::after {
+  transform: rotate(-60deg);
+  box-shadow:
+    0 8px 8px -15px #431f1f,
+    /* top shadow */
+    0 -8px 8px -15px #431f1f;
+}
+
+/* ===================== */
+
+
+
+.prop1 {
+  animation: moveLeft 5s forwards infinite;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  0% {
+    transform: translateX(0);
+  }
+}
+
+.body {
+  animation: moveUpDown infinite alternate;
+  animation-duration: calc(2s + var(--delay)); /* Adjust duration as needed */
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Move down */
+  }
+}
+
+/* Your delay values for synchronization */
+.body:nth-child(1) {
+  --delay: 10s;
+}
+.body:nth-child(2) {
+  --delay: 8s;
+}
+.body:nth-child(3) {
+  --delay: 10s;
+}
+.body:nth-child(4) {
+  --delay: 8s;
+}
+.body:nth-child(5) {
+  --delay: 9s;
+}
+.body:nth-child(6) {
+  --delay: 10s;
+}
+.body:nth-child(7) {
+  --delay: 8s;
+}
+.body:nth-child(8) {
+  --delay: 9s;
+}
+.body:nth-child(9) {
+  --delay: 9.5s;
+}
+.body:nth-child(10) {
+  --delay: 8s;
+}
+.body:nth-child(11) {
+  --delay: 9s;
+}
+.body:nth-child(12) {
+  --delay: 8s;
+}
+
+/* React Spin */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.reactspin {
+  animation: spin infinite 20s linear; /* Adjust duration and timing function as needed */
+}
